@@ -1,0 +1,77 @@
+﻿[dotenv@17.2.3] injecting env (4) from .env -- tip: ΓÜÖ∩╕Å  enable debug logging with { debug: true }
+node : (node:1936) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type 
+of file:///C:/Users/ADC/carinfo/backend/server.js is not specified and 
+it doesn't parse as CommonJS.
+At line:1 char:1
++ node server.js 2>&1 | Out-File server-log.txt -Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:1936) [MO...se as Com 
+   monJS.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Reparsing as ES module because module syntax was detected. This incurs a 
+performance overhead.
+To eliminate this warning, add "type": "module" to 
+C:\Users\ADC\carinfo\backend\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1936) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated 
+option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 
+and will be removed in the next major version
+(node:1936) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated 
+option: useUnifiedTopology has no effect since Node.js Driver version 
+4.0.0 and will be removed in the next major version
+Server running
+Using Ethereal test account
+Ethereal user: svdxlxy2l5uu2yjd@ethereal.email
+MongoDB error: MongooseServerSelectionError: Could not connect to any 
+servers in your MongoDB Atlas cluster. One common reason is that you're 
+trying to access the database from an IP that isn't whitelisted. Make 
+sure your current IP address is on your Atlas cluster's IP whitelist: 
+https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (C:\Users\ADC\carinfo\backend\node_modules
+\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (C:\Users\ADC\carinfo\backend\node_module
+s\mongoose\lib\connection.js:1100:11) {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-jz2qiif-shard-00-01.bni0yhi.mongodb.net:27017' => 
+[ServerDescription],
+      'ac-jz2qiif-shard-00-02.bni0yhi.mongodb.net:27017' => 
+[ServerDescription],
+      'ac-jz2qiif-shard-00-00.bni0yhi.mongodb.net:27017' => 
+[ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-grchga-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  cause: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-jz2qiif-shard-00-01.bni0yhi.mongodb.net:27017' => 
+[ServerDescription],
+      'ac-jz2qiif-shard-00-02.bni0yhi.mongodb.net:27017' => 
+[ServerDescription],
+      'ac-jz2qiif-shard-00-00.bni0yhi.mongodb.net:27017' => 
+[ServerDescription]
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-grchga-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  }
+}
